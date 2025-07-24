@@ -3,126 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philmur - Our Love Story</title>
+    <title>Philmur</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@400;700;900&family=Crimson+Text:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="newspaper-container">
-        <div class="paper-texture"></div>
-        <div class="coffee-stain"></div>
-        <div class="fold-mark"></div>
-        
-        <header class="newspaper-header">
-            <div class="ornament top-ornament">❦ ❦ ❦</div>
-            <div class="date-line">
-                <span class="date-decoration">◆</span>
-                ESTABLISHED JULY XXIV • MMXXII
-                <span class="date-decoration">◆</span>
+    <div class="newspaper-page">
+        <div class="content-center">
+            <h1 class="title">Philmur</h1>
+            <p class="subtitle">Since 2022</p>
+            <div class="counter" id="days-counter"></div>
+            <div class="video-frame">
+                <video autoplay muted loop playsinline>
+                    <source src="replicate-prediction-vc8q0enw01rme0cr7p79f8chag.mp4" type="video/mp4">
+                </video>
             </div>
-            <h1 class="newspaper-title">
-                <span class="title-decoration">The</span>
-                Philmur
-                <span class="title-decoration">Chronicle</span>
-            </h1>
-            <div class="edition-wrapper">
-                <div class="edition-line"></div>
-                <div class="edition">LOVE EDITION • VOLUME ∞ • PRICE: PRICELESS</div>
-                <div class="edition-line"></div>
-            </div>
-        </header>
-        
-        <div class="fancy-divider">
-            <span class="divider-ornament">❦</span>
-        </div>
-        
-        <main class="main-content">
-            <div class="headline-wrapper">
-                <div class="headline-border">
-                    <h2 class="main-headline">
-                        <span class="headline-flourish">♥</span>
-                        I LOVE YOU PHILI
-                        <span class="headline-flourish">♥</span>
-                    </h2>
-                    <p class="subheadline">~ A Timeless Romance ~</p>
-                </div>
-            </div>
-            
-            <div class="central-showcase">
-                <div class="film-reel left-reel"></div>
-                <div class="film-reel right-reel"></div>
-                
-                <div class="vintage-frame">
-                    <div class="frame-corner top-left">❋</div>
-                    <div class="frame-corner top-right">❋</div>
-                    <div class="frame-corner bottom-left">❋</div>
-                    <div class="frame-corner bottom-right">❋</div>
-                    
-                    <div class="video-wrapper">
-                        <div class="film-grain"></div>
-                        <div class="vignette"></div>
-                        <video autoplay muted loop playsinline class="vintage-video">
-                            <source src="replicate-prediction-vc8q0enw01rme0cr7p79f8chag.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="projector-light"></div>
-                    </div>
-                    
-                    <div class="frame-label">
-                        <span class="label-ornament">◆</span>
-                        CAPTURED MOMENTS IN TIME
-                        <span class="label-ornament">◆</span>
-                    </div>
-                </div>
-                
-                <div class="counter-section">
-                    <div class="counter-ornament left">✾</div>
-                    <div class="counter-box">
-                        <div class="counter-header">Our Journey Together</div>
-                        <div id="days-counter" class="days-count"></div>
-                        <div class="counter-label">DAYS OF LOVE</div>
-                    </div>
-                    <div class="counter-ornament right">✾</div>
-                </div>
-            </div>
-            
-            <div class="poetic-section">
-                <p class="poetry">
-                    "Two hearts beating as one,<br>
-                    Through seasons and sun,<br>
-                    Our story has just begun"
-                </p>
-            </div>
-            
-            <footer class="newspaper-footer">
-                <div class="fancy-divider">
-                    <span class="divider-ornament">❦</span>
-                </div>
-                <div class="footer-content">
-                    <p class="footer-text">~ Philmur ~</p>
-                    <p class="footer-subtitle">Forever & Always</p>
-                    <div class="ornament bottom-ornament">◆ ◆ ◆</div>
-                </div>
-            </footer>
-        </main>
-        
-        <div class="newspaper-edges">
-            <div class="torn-edge top"></div>
-            <div class="torn-edge bottom"></div>
         </div>
     </div>
     
-    <div class="floating-hearts"></div>
-    
-    <!-- YouTube Background Music -->
-    <div id="youtube-player" style="display: none;"></div>
-    
-    <!-- Music Control Button -->
-    <button id="music-toggle" class="music-control" aria-label="Toggle music">
-        <span class="music-icon">♪</span>
-    </button>
-    
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
 </body>
 </html>
