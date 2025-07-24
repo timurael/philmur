@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1e8;
+    font-family: 'Crimson Text', serif;
+    color: #2c2416;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.newspaper-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fefcf3;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid #d4c5a0;
+    padding: 40px;
+    position: relative;
+}
+
+.newspaper-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 0, 0.01) 10px,
+            rgba(0, 0, 0, 0.01) 20px
+        );
+    pointer-events: none;
+}
+
+.newspaper-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.date-line {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6b5d4f;
+    margin-bottom: 10px;
+}
+
+.newspaper-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #1a1612;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.edition {
+    font-size: 16px;
+    font-style: italic;
+    color: #6b5d4f;
+    letter-spacing: 1px;
+}
+
+.divider {
+    border-top: 3px double #2c2416;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+.headline-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.subheadline {
+    font-size: 24px;
+    font-style: italic;
+    color: #6b5d4f;
+}
+
+.counter-section {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.counter-box {
+    border: 2px solid #2c2416;
+    padding: 30px 50px;
+    text-align: center;
+    background-color: #faf8f0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1a1612;
+}
+
+.days-count {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #8b0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.counter-label {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6b5d4f;
+}
+
+.content-grid {
+    margin: 40px 0;
+}
+
+.feature-article {
+    text-align: center;
+}
+
+.article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border: 8px solid #2c2416;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-caption {
+    font-size: 18px;
+    font-style: italic;
+    color: #6b5d4f;
+    margin-top: 15px;
+}
+
+.newspaper-footer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.footer-subtitle {
+    font-size: 18px;
+    font-style: italic;
+    color: #6b5d4f;
+}
+
+@media (max-width: 768px) {
+    .newspaper-title {
+        font-size: 48px;
+    }
+    
+    .main-headline {
+        font-size: 36px;
+    }
+    
+    .days-count {
+        font-size: 48px;
+    }
+    
+    .newspaper-container {
+        padding: 20px;
+    }
+    
+    .counter-box {
+        padding: 20px 30px;
+    }
+}
