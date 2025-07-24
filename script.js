@@ -119,3 +119,53 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// YouTube Player
+let player;
+let isPlaying = false;
+
+// This function creates an <iframe> (and YouTube player)
+// after the API code downloads.
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-player', {
+        height: '0',
+        width: '0',
+        videoId: 'QMP-o8WXSPM',
+        playerVars: {
+            'autoplay': 0,
+            'controls': 0,
+            'loop': 1,
+            'playlist': 'QMP-o8WXSPM'
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    // Player is ready
+    const musicToggle = document.getElementById('music-toggle');
+    const musicIcon = musicToggle.querySelector('.music-icon');
+    
+    musicToggle.addEventListener('click', function() {
+        if (isPlaying) {
+            player.pauseVideo();
+            musicToggle.classList.remove('playing');
+            musicIcon.textContent = '♪';
+            isPlaying = false;
+        } else {
+            player.playVideo();
+            musicToggle.classList.add('playing');
+            musicIcon.textContent = '♫';
+            isPlaying = true;
+        }
+    });
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        player.playVideo();
+    }
+}

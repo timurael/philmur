@@ -629,6 +629,53 @@ body::before {
     }
 }
 
+.music-control {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b6914 0%, #6b5d4f 100%);
+    border: 3px solid #d4af37;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-control:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 6px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+.music-control:active {
+    transform: scale(0.95);
+}
+
+.music-icon {
+    font-size: 28px;
+    color: #f4f1e8;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.music-control.playing .music-icon {
+    animation: musicPulse 2s ease-in-out infinite;
+}
+
+@keyframes musicPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
 @media (max-width: 768px) {
     .newspaper-container {
         padding: 30px 20px;
@@ -667,5 +714,16 @@ body::before {
     
     .edition-line {
         width: 50px;
+    }
+    
+    .music-control {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .music-icon {
+        font-size: 24px;
     }
 }
