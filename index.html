@@ -5,52 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philmur - Our Love Story</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@400;700;900&family=Crimson+Text:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="newspaper-container">
+        <div class="paper-texture"></div>
+        <div class="coffee-stain"></div>
+        <div class="fold-mark"></div>
+        
         <header class="newspaper-header">
-            <div class="date-line">Est. July 24, 2022</div>
-            <h1 class="newspaper-title">The Philmur Chronicle</h1>
-            <div class="edition">Love Edition • Volume ∞</div>
+            <div class="ornament top-ornament">❦ ❦ ❦</div>
+            <div class="date-line">
+                <span class="date-decoration">◆</span>
+                ESTABLISHED JULY XXIV • MMXXII
+                <span class="date-decoration">◆</span>
+            </div>
+            <h1 class="newspaper-title">
+                <span class="title-decoration">The</span>
+                Philmur
+                <span class="title-decoration">Chronicle</span>
+            </h1>
+            <div class="edition-wrapper">
+                <div class="edition-line"></div>
+                <div class="edition">LOVE EDITION • VOLUME ∞ • PRICE: PRICELESS</div>
+                <div class="edition-line"></div>
+            </div>
         </header>
         
-        <div class="divider"></div>
+        <div class="fancy-divider">
+            <span class="divider-ornament">❦</span>
+        </div>
         
         <main class="main-content">
-            <div class="headline-section">
-                <h2 class="main-headline">I LOVE YOU PHILI</h2>
-                <p class="subheadline">A Timeless Romance</p>
-            </div>
-            
-            <div class="counter-section">
-                <div class="counter-box">
-                    <h3>Our Journey Together</h3>
-                    <div id="days-counter" class="days-count"></div>
-                    <p class="counter-label">Days of Love</p>
+            <div class="headline-wrapper">
+                <div class="headline-border">
+                    <h2 class="main-headline">
+                        <span class="headline-flourish">♥</span>
+                        I LOVE YOU PHILI
+                        <span class="headline-flourish">♥</span>
+                    </h2>
+                    <p class="subheadline">~ A Timeless Romance ~</p>
                 </div>
             </div>
             
-            <div class="content-grid">
-                <article class="feature-article">
-                    <h3 class="article-title">Featured Moments</h3>
-                    <div class="video-container">
-                        <video autoplay muted loop playsinline>
+            <div class="central-showcase">
+                <div class="film-reel left-reel"></div>
+                <div class="film-reel right-reel"></div>
+                
+                <div class="vintage-frame">
+                    <div class="frame-corner top-left">❋</div>
+                    <div class="frame-corner top-right">❋</div>
+                    <div class="frame-corner bottom-left">❋</div>
+                    <div class="frame-corner bottom-right">❋</div>
+                    
+                    <div class="video-wrapper">
+                        <div class="film-grain"></div>
+                        <div class="vignette"></div>
+                        <video autoplay muted loop playsinline class="vintage-video">
                             <source src="replicate-prediction-vc8q0enw01rme0cr7p79f8chag.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <div class="projector-light"></div>
                     </div>
-                    <p class="article-caption">Captured memories that last forever</p>
-                </article>
+                    
+                    <div class="frame-label">
+                        <span class="label-ornament">◆</span>
+                        CAPTURED MOMENTS IN TIME
+                        <span class="label-ornament">◆</span>
+                    </div>
+                </div>
+                
+                <div class="counter-section">
+                    <div class="counter-ornament left">✾</div>
+                    <div class="counter-box">
+                        <div class="counter-header">Our Journey Together</div>
+                        <div id="days-counter" class="days-count"></div>
+                        <div class="counter-label">DAYS OF LOVE</div>
+                    </div>
+                    <div class="counter-ornament right">✾</div>
+                </div>
+            </div>
+            
+            <div class="poetic-section">
+                <p class="poetry">
+                    "Two hearts beating as one,<br>
+                    Through seasons and sun,<br>
+                    Our story has just begun"
+                </p>
             </div>
             
             <footer class="newspaper-footer">
-                <div class="divider"></div>
-                <p class="footer-text">~ Philmur ~</p>
-                <p class="footer-subtitle">Two hearts, one story</p>
+                <div class="fancy-divider">
+                    <span class="divider-ornament">❦</span>
+                </div>
+                <div class="footer-content">
+                    <p class="footer-text">~ Philmur ~</p>
+                    <p class="footer-subtitle">Forever & Always</p>
+                    <div class="ornament bottom-ornament">◆ ◆ ◆</div>
+                </div>
             </footer>
         </main>
+        
+        <div class="newspaper-edges">
+            <div class="torn-edge top"></div>
+            <div class="torn-edge bottom"></div>
+        </div>
     </div>
+    
+    <div class="floating-hearts"></div>
     
     <script src="script.js"></script>
 </body>
